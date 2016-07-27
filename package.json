@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build --production",
     "buildcss": "mcss -c webapp/mcss/mcss.json",
-    "start": "gulp client && node server/app.js"
+    "start": "npm install && gulp client && node server/app.js"
   },
   "repository": {
     "type": "git",

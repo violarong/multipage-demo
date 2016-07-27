@@ -52,7 +52,7 @@ gulp.task('mcss', shell.task(['mcss -c webapp/mcss/mcss.json']) );
 //     .pipe(gulp.dest(config.distBase+'/rev/js'))
 // });
 //
-gulp.task('client', function() {
+gulp.task('client', function(done) {
     sequence(['copy', 'webpack', 'mcss'], done);
 });
 
