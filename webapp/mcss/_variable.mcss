@@ -1,0 +1,76 @@
+// Name:            Variables
+// Description:     变量
+// Author:          violarong(xiaorong_hz@163.com)
+// ========================================================================
+
+
+// Dimension Variables:
+// ========================================================================
+
+/* Dimensions */
+$media-xs-max-width = 480px - 1;
+$media-sm-max-width = 768px - 1;
+$media-md-max-width = 1200px - 1;
+$media-mdx-max-width = 1330px;
+$media-lg-max-width = 1600px - 1;
+
+/* Height */
+$height-base = 35px;
+$height-xs = 22px;
+$height-sm = 30px;
+$height-lg = 38px;
+$height-x = 40px;
+$height-xl = 46px;
+
+/* Font Size */
+$font-size-base = 14px;
+$font-size-xs = 12px;
+$font-size-sm = 13px;
+$font-size-lg = 16px;
+$font-size-xl = 18px;
+$font-size-xxl = 20px;
+$font-size-xxxl = 30px;
+$font-size-xxxxl = 40px;
+
+/* Border Radius */
+$border-radius-base = 2px;
+$border-radius-sm = 1px;
+$border-radius-lg = 4px;
+
+$inline-block-space = 4px;
+
+/* border colors */
+$border-color-base = #e1e8ed;
+$border-color-secondary = #22b2e6;
+
+
+// Color Variables:
+// ========================================================================
+
+/* Brand Colors */
+$brand-primary = #5494db;
+$brand-primary-hover = #64a8f8;
+$brand-secondary = #67aaf5;     // 按钮默认颜色
+$brand-info = #22b2e6;
+$brand-error = #ff867f;
+$brand-warning = #ff884d;
+$brand-success = $brand-info;    // 之后补充
+
+
+/* Text */
+$color-base = #333;
+$color-secondary = #666;
+$color-muted = #999;
+$color-disabled = #ccc;
+$color-link-base = #3993bf;
+$color-link-secondary = #1f9ecc;
+$color-white = #fff;
+$color-money = #5a6367;
+
+
+// Font Variables:
+// ========================================================================
+$font-family-sans-serif = Helvetica, Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+$font-family-monospace = Menlo, Monaco, Consolas, "Courier New", monospace;
+
+

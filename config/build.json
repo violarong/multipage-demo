@@ -1,0 +1,4 @@
+{
+    "clientBase": "./webapp",
+    "distBase": "./public"
+}

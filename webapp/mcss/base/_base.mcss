@@ -1,0 +1,16 @@
+//nec reset
+$reset-nec();
+
+label{cursor:pointer;}
+body,textarea,input,button,select,keygen,legend{font:$font-size-base/1.42857 $font-family-sans-serif;color:$color-base;outline:0;}
+a{color:$brand-primary;}
+a:hover{color:$brand-primary-hover;}
+button{border:0;}
+input::-ms-clear,input::-ms-reveal{display:none;}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:none;}
+::-webkit-scrollbar-thumb{border-radius:3px;background:rgba(92,110,130,0.6);}
+::-webkit-scrollbar-button,::-webkit-scrollbar-corner{display:none;}
+$placeholder({color:$color-disabled !important;});
+.z-placeholder{color:$color-disabled !important;}
+.js-placeholder{color:$color-disabled !important;margin-left:5px;}

@@ -1,0 +1,54 @@
+// Name:            Button
+// Description:     按钮
+// Author:          violarong
+// Component:       `u-btn`
+// ========================================================================
+
+
+.u-btn {
+    $box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border:none;
+    font: inherit;
+
+    padding: 0 30px;
+    height: $height-base;
+    line-height: $height-base;
+
+    background: #fff;
+    color: #333;
+    $border: #cdcdcd;
+}
+
+/* Hover */
+.u-btn:hover,
+.u-btn:focus {
+    color: #67aaf5;
+    $border: #67aaf5;
+}
+
+/* Active */
+.u-btn.z-act {
+    background: #f5f9fb;
+    color: #ccc;
+    $border: #edf2f5;
+}
+
+.u-btn:active {
+    $box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Disabled */
+.u-btn:disabled,
+.u-btn.z-dis {
+    cursor: not-allowed;
+    color: #ccc;
+    $border: #ddd;
+    $box-shadow: none;
+}
+
+.u-btn + .u-btn {
+    margin-left: 20px - $inline-block-space;
+}

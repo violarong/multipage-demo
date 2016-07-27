@@ -1,0 +1,142 @@
+// Name:            ListCard
+// Description:     卡片式列表，如集群列表、数据库实例列表
+// Author:          violarong
+// ========================================================================
+$listcard-color = #999;
+$listcard-border-color = #ebf0f5;
+$listcard-bg-color = #f5f7fa;
+$listcard-bg-hover-color = #eef2f5;
+
+.m-listcard{
+    border: 1px solid $listcard-border-color;
+    $box-sizing: border-box;
+    color: $listcard-color;
+    margin-bottom:30px;
+    &:hover{
+      box-shadow: 0 0 10px 0 rgba(80,90,109,0.16);
+    }
+    .listcard_tit{
+        height:40px;line-height: 40px;
+        background-color: $listcard-bg-color;
+        padding-left:20px;
+        border-bottom:1px solid $listcard-border-color;
+        @extend clearfix;
+        > ul{
+            $nowrap();
+            li{
+                $inline-block();
+                > label{
+                    cursor:default;
+                }
+                &:after{
+                    content:'|';
+                    margin: 0 12px;
+                    color: #d1d1d2;
+                }
+                &:last-child,&:first-child,&.name{
+                    &:after{
+                        display:none;
+                    }
+                }
+                .op{
+                    > a, > span{
+                        margin-right:14px;
+                    }
+                }
+            }
+            li.name{
+                $ellipsis();
+                max-width:166px;
+                margin-right:26px;
+                vertical-align: middle;
+                > a.z-dis{
+                    cursor: default;
+                    color:$listcard-color;
+                }
+            }
+        }
+
+    }
+    .listcard_cnt{
+        padding:30px 0;
+        text-align: center;
+        .cardwrap{
+            text-align: center;
+            $inline-block();
+            width:11%;
+            margin-left:1.5%;
+            margin-right:1.5%;
+            $box-sizing: border-box;
+            &:first-child{
+                margin-left:0;
+            }
+            &:last-child{
+                margin-right:0;
+            }
+            > p{
+
+            }
+            .card{
+                height:58px;
+                line-height: 58px;
+                border: 1px solid #e1e8ed;
+                margin-top:13px;
+                font-size: 12px;
+                color: #999;
+                text-align: center;
+                display: block;
+                .num{
+                    font-size: 22px;
+                }
+                .unit{
+                    line-height: 20px;
+                    margin-left:5px;
+                }
+            }
+            .card.z-dis{
+                cursor: not-allowed;
+                &:hover{
+                    background-color: #f5f9fb;
+                }
+            }
+            .card-gray{
+                background-color: #f5f9fb;
+                &:hover{
+                    background-color: $listcard-bg-hover-color;
+                }
+            }
+            .card-orange{
+                color:#ffb025;
+            }
+            .border{
+                border-top-width:1px;
+                border-top-style:solid;
+            }
+            .border-greenpurple{
+                border-top-color: #00d9b9;
+            }
+            .border-blue{
+                border-top-color: #00b2eb;
+            }
+            .border-deepblue{
+                border-top-color: #4675eb;
+            }
+            .border-orange{
+                border-top-color: #fcc87e;
+            }
+        }
+    }
+}
+
+/* 列表为空或出错*/
+.m-listcard-empty,.m-listcard-error{
+    border-left:none;
+    border-right:none;
+    .listcard_cnt{
+        > p{
+            text-align:center;
+            color:#999;
+        }
+    }
+
+}

@@ -1,0 +1,126 @@
+@abstract "base/_helper.mcss";
+@abstract '_variable.mcss';
+
+@import "base/_base.mcss";
+
+@import "module/_navbar.mcss";
+
+@import "unit/_button.mcss";
+
+body, html{
+  font: $font-size-base/1.42857 $font-family-sans-serif;
+  position: relative;
+}
+
+/*头部banner*/
+.m-banner{
+    height:580px;
+    $box-sizing:border-box;
+    background: url(/assets/images/index/banner/bg.png) repeat 0 0;
+    .banner_cnt{
+        position:relative;
+        height:100%;
+        .dqmask{
+            background: url(/assets/images/index/banner/bg-dq.png) no-repeat center 0;
+            position:absolute;
+            bottom:0;width:100%;height:100%;
+            z-index:1;
+        }
+        .tipwrap{
+            position: absolute;top: 50%;left: 50%;z-index: 3;
+            margin-top: -70px;
+            margin-left: -252px;
+            width:500px;
+            text-align: center;
+            .sloganwrap{
+                >h1,>h2{
+                    overflow: hidden;text-indent:-2000px;
+                }
+                .slogan1{width:499px;}
+                .slogan2{width:216px;margin-top:30px;}
+            }
+            .iptwrap{
+                $inline-block();
+                @extend clearfix;
+                margin-top:45px;
+                position:relative;
+                > input{
+                    width:250px;height:46px;line-height:46px;
+                    background-color: rgba(255,255,255,0.08);
+                    border:1px solid rgba(255,255,255,0.4);
+                    $box-sizing:border-box;
+                    padding-left:18px;
+                    border-right:0;
+                    color:#fff;font-size:14px;
+                    float:left;
+                    &:focus,&:active,&:hover{
+                      border-color:rgba(255,255,255,0.8);
+                    }
+                    $placeholder({font-family: microsoft yahei;color:#757c91});
+                    border-radius: 0;
+                }
+                > .u-btn{
+                    background-color: #2c91ed;border:1px solid #2c91ed;color:#fff;
+                    width:112px;height:46px;line-height:46px;
+                    padding:0;border-radius:0;
+                    float:left;
+                    &:hover,&:active{
+                      background-color: #2984d9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 能做什么模块 */
+.m-cando{
+    overflow: hidden;
+    $box-sizing:border-box;
+    padding-top: 50px;
+    height:180px;
+    background-color: #fff;
+    text-align: center;
+    .tit{
+        > h3{font-size:38px;color:#29333f;letter-spacing:6px;}
+        > p{font-size:16px;color:#808080;margin-top:9px;letter-spacing:1px}
+    }
+}
+
+/* 成果 */
+.m-achieve{
+    background:url(/assets/images/index/mountain.png) center center no-repeat;
+    width:100%;
+    height:200px;
+    padding-top:45px;
+    $box-sizing:border-box;
+    @extend clearfix;
+    .item{
+        text-align: center;
+        width:33.3%;
+        float:left;
+        .numwrap{
+            color:#fff;
+            font-size:18px;
+            .num{font-size:60px;margin-right:10px;}
+        }
+        .exp{color:#fff;margin-top:-4px;}
+        .exp-1{margin-top:-8px;}
+        .ssd{
+            $inline-block();
+            background-color:#2c91ed;color:#fff;
+            height:24px;line-height:24px;width:68px;
+            border-radius:12px;
+        }
+        .linewrap{
+            font-size:0;
+            .sepline{
+                width:50px;height:3px;background-color:#2c91ed;
+                $inline-block();
+                &-1{
+                    margin-left:-20px;
+                }
+            }
+        }
+    }
+}
