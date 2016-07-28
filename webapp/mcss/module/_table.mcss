@@ -1,0 +1,44 @@
+// Name:            Table
+// Description:     表格
+// Author:          violarong(xiaorong_hz@163.com)
+// ========================================================================
+
+
+// Component:       `m-table`
+// ========================================================================
+
+$border-color = #e9edf2;
+
+.m-table {
+    width: 100%;
+    margin-bottom: 20px;
+    th {
+        padding: 4px 8px;
+        height: 45px;
+        line-height: 45px;
+        overflow: hidden;
+        background-color: #f5f7fa;
+        border-bottom: 1px solid $border-color;
+    }
+    td {
+        padding: 0 8px;
+        height: 45px;
+        line-height: 45px;
+        /*$ellipsis();*/
+        border-bottom: 1px solid $border-color;
+        color:#666;
+        &.date{
+            color:#999;
+        }
+    }
+    td.z-empty{
+        border-bottom: none;
+    }
+    .w10 {width: 10%;}
+    .w15 {width: 15%;}
+    .w20 {width: 20%;}
+}
+
+.m-table.m-table-fixed{
+    table-layout: fixed;
+}

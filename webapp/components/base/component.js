@@ -1,7 +1,7 @@
 /**
  * Component    基础组件体系基类
- * @author      sensen(hzzhaoyusen@corp.netease.com)
- *              capasky(hzyangzhouzhi@corp.netease.com)
+ * @author      sensen
+ *              capasky
  */
 
 

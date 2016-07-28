@@ -4,10 +4,20 @@
 @import "base/_base.mcss";
 
 @import "module/_navbar.mcss";
+@import "module/_table.mcss";
+@import "module/_pager.mcss";
 
 @import "unit/_button.mcss";
 
 body, html{
   font: $font-size-base/1.42857 $font-family-sans-serif;
   position: relative;
+}
+
+.g-doc{
+    padding-top:70px;
+}
+
+.m-inslist{
+    padding:40px;
 }

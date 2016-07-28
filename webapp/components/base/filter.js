@@ -1,10 +1,12 @@
 /**
  * 基础组件体系基类Component过滤器定义
- * @author      sensen(hzzhaoyusen@corp.netease.com)
- *              capasky(hzyangzhouzhi@corp.netease.com)
+ * @author      sensen
+ *              capasky
  */
 
 'use strict';
+
+import moment from 'moment';
 
 export default {
     /**

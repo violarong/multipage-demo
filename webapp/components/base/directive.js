@@ -1,6 +1,6 @@
 /**
  * 基础组件体系基类Component辅助指令定义
- * @author      capasky(hzyangzhouzhi@corp.netease.com)
+ * @author      capasky
  */
 
  'use strict';

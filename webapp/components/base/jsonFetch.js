@@ -1,10 +1,13 @@
-
+/**
+ * ------------------------------------------------------------
+ * Fetch
+ * @author capasky
+ * ------------------------------------------------------------
+ */
 'use strict';
 
 import isObject from 'lodash/isObject';
 import isPlainObject from 'lodash/isPlainObject';
-
-import Notify from '../common/notify.js';
 
 function serialize(obj) {
     return Object.keys(obj).map(name => {
@@ -87,7 +90,7 @@ export function joinErrors(errors) {
     return errorsText.join('\n');
 }
 
-export function get(url, data, timestamp = true) {
+export function get(url, data, timestamp = false) {
     if (timestamp) {
         data = data || {};
         data.timestamp = +new Date();

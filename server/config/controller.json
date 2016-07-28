@@ -1,0 +1,14 @@
+{
+    "rootPath":"/controller",
+    "constrollers":[
+        {
+            "path":"/",
+            "handler":"indexController.index"
+        },
+        {
+            "regPath": "/api/(.*)/(.*)",
+            "method": "all",
+            "handler": "$1Controller.$2"
+        }
+    ]
+}

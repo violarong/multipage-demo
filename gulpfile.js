@@ -59,6 +59,7 @@ gulp.task('client', function(done) {
 // 监听
 gulp.task('watch', function() {
     gulp.watch(['webapp/pages/**'], ['webpack']);
+    gulp.watch(['webapp/components/**'], ['webpack']);
     gulp.watch(['webapp/mcss/**'], ['mcss']);
     gulp.watch(['webapp/assets/**'], ['copy']);
 });

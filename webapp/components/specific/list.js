@@ -7,6 +7,7 @@
 
 import Component from '../base/component.js';
 import template from './list.html';
+import InstanceService from '../../service/instance.js';
 
 const List = Component.extend({
     name: 'List',
@@ -22,7 +23,11 @@ const List = Component.extend({
 
     },
     _getList(){
-        this.data.list = [{name:'test1'},{name:'test2'}];
+        InstanceService.get()
+            .then(instance => {
+                this.data.list = instance;
+                this.$update();
+            });
     }
 });
 

@@ -5,9 +5,9 @@
 
 'use strict';
 
-import MainList from '../components/specific/main.js';
+import List from '../components/specific/list.js';
 
-let mainList = new MainList();
+let mainList = new List();
 mainList.$inject(document.getElementById('modelTest'));
 
 var test;
